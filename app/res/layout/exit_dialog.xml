@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/exit_layout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/u3b_card_dialog" >
+
+       
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="你确定要退出吗？"
+            android:textColor="@color/dodger_blue"
+            android:textStyle="bold" /> 
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="8dp"
+             >
+            
+            <Button
+              android:id="@+id/exitBtn1"
+              android:layout_width="110dp"
+              android:layout_height="40dp"
+              android:text="否"
+              android:textSize="16sp"
+              android:textColor="#fff"
+              android:background="@drawable/u3b_btn_red"
+              android:gravity="center"
+			  android:onClick="exit_no"
+              />
+            
+            <Button
+              android:id="@+id/exitBtn0"
+              android:layout_width="110dp"
+              android:layout_height="40dp"
+              android:layout_marginLeft="10dp"
+              android:text="是"
+              android:textSize="16sp"
+              android:textColor="#fff"
+              android:background="@drawable/u3b_btn_blue"
+              android:gravity="center"
+			  android:onClick="exit_yes"
+              />
+        </LinearLayout>
+
+    </LinearLayout>

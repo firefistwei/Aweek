@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/u3b_friendinfo_menu_add"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/ic_addfriend"
+        android:title="联系">
+        <menu>
+            <item
+                android:id="@+id/u3b_friendinfo_menu_guanzhu"
+                android:showAsAction="always|withText"
+                android:title="关注"/>
+            <item
+                android:id="@+id/u3b_friendinfo_menu_lahei"
+                android:showAsAction="always|withText"
+                android:title="拉黑"/>
+            <item
+                android:id="@+id/u3b_friendinfo_menu_jubao"
+                android:showAsAction="always|withText"
+                android:title="举报"/>
+            
+        </menu>
+    </item>
+
+</menu>

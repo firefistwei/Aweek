@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+                <ProgressBar
+                    android:id="@+id/photoshow_loading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/card_style_0"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/photoshow_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="4dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/card_style_0"
+                    android:contentDescription="@string/descr_image"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="#22434343" />
+
+                <TextView
+                    android:id="@+id/photoshow_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/card_style_0"
+                    android:gravity="center" 
+                    android:text="我是一张大照片"
+                    android:textColor="#3f3f3f"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="#22434343" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    
+                    android:background="@drawable/card_style_0"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/photoshow_avatar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/random_head0" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/photoshow_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3天前"
+                            android:textColor="#ffbbbbbb"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/photoshow_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="韦泽鹏"
+                            android:textColor="#3f3f3f"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/photoshow_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dip"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="照片的描述信息"
+                        android:textColor="#ffbbbbbb"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="#22434343" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/card_style_0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+					    android:id="@+id/photoshow_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="4dp"
+                        android:text="0人觉得很2B~ !"
+                        android:textColor="#ff3f3f3f"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="80dp"
+                        android:background="@drawable/tiny_really_like" />
+
+                    <TextView
+					    android:id="@+id/photoshow_zan"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="已赞"
+                        android:textColor="#3f3f3f"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="#22434343" />
+
+                
+            
+
+</LinearLayout>

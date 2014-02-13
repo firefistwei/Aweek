@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee" >
+
+    <ImageView
+        android:id="@+id/wanted_left_img" 
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000"
+        />
+    <TextView 
+        android:id="@+id/wanted_left_text"
+        android:gravity="center_horizontal" 
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="上传正在吃饭的2B照片"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        />
+    
+    <Button
+        android:id="@+id/wanted_left_btn1"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_style_purple"
+        android:text="上传"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+    
+    <TextView 
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="看看别人上传的吧！"
+        android:textSize="16sp"
+        android:textColor="#800080"
+        />
+    
+    <Button
+        android:id="@+id/wanted_left_btn2"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_style_purple"
+        android:text="本周通缉榜"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

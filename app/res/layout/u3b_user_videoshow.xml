@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/user_videoshow_time_relayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip" >
+
+        <TextView
+            android:id="@+id/user_videoshow_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="0&apos;&apos;"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/user_videoshow_maxtime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="10″"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <ProgressBar
+            android:id="@+id/user_videoshow_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="10"
+            android:progress="0"
+            android:progressDrawable="@drawable/globle_player_progress_bar_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/u3b_card"
+        android:orientation="horizontal" >
+
+        <SurfaceView
+            android:id="@+id/user_videoshow_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="gone" >
+        </SurfaceView>
+
+        <firefist.wei.utils.MyVideoView
+            android:id="@+id/user_videoshow_videoview"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/user_videoshow_photo_iv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/user_videoshow_play_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_video_play"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/user_videoshow_mergebtn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            android:background="#2222"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_menu_done_big" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/user_videoshow_start_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/u3b_amsc_cam_bg"
+            android:clickable="true"
+            android:src="@drawable/amsc_cam_button"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/user_videoshow_cancel_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/u3b_btn_delete"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/user_videoshow_switchbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/u3b_cam_switch"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

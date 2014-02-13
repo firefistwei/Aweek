@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_fabric" >
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/recommend_week_1"
+        />
+
+    <Button
+        android:id="@+id/nearby_left_btn1"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/guide_go_button"
+        android:text="我讲笑话你请客"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/nearby_left_btn2"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/guide_go_button"
+        android:text="恶搞路人甲"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

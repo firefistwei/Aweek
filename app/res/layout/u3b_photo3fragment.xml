@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/u3b_card" >
+
+                <ImageView
+                    android:id="@+id/u3b_photo3_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camera_icon" />
+
+                <SurfaceView
+                    android:id="@+id/u3b_photo3_surfaceview"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/u3b_photo3_add"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/u3b_photo3_layout_btns"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/u3b_photo3_image"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/u3b_photo3_redbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/u3b_btn_red"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/ic_navigation_cancel" />
+
+                    <ImageView
+                        android:id="@+id/u3b_photo3_bluebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/u3b_btn_blue"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_navigation_done" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/u3b_photo3_layout_texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u3b_photo3_layout_btns"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/u3b_photo3_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="15"
+                        android:hint="添加描述"
+                        android:singleLine="true"
+                        android:textColor="@color/u3b_blue"
+                        android:textColorHint="@color/u3b_blue"
+                        android:textSize="18sp"
+                        android:typeface="monospace" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/u3b_photo3_startbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/u3b_player_bg"
+                    android:onClick="u3b_photo3_start_btn"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_home_snapshot" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

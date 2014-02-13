@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/u3b_whitegrey"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/u3b_card"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/page2_list_item_audiolayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/u3b_card_blue"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/page2_list_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="-1"
+                    android:padding="4dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="#活动的标题#活动的内容"
+                    android:textColor="@color/dodger_blue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6" >
+
+                <ImageView
+                    android:id="@+id/page2_list_item_audioicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/ic_play" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:visibility="visible" >
+
+            <SurfaceView
+                android:id="@+id/page2_list_item_surfaceview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#0000"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/page2_list_item_photo"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/camera_icon"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/page2_list_item_progressbar"
+                style="@android:style/Widget.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/u3b_video_refresh"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/page2_list_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_type_video" />
+
+            <ImageView
+                android:id="@+id/page2_list_item_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_video_play"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="4dp"
+            android:background="@color/u3b_whitegrey" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/page2_list_item_head"
+                android:layout_width="46dip"
+                android:layout_height="46dip"
+                android:layout_margin="4dip"
+                android:src="@drawable/u3b_default_head" />
+
+            <TextView
+                android:id="@+id/page2_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/page2_list_item_head"
+                android:text="发布者名字"
+                android:textColor="@color/dodger_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/page2_list_item_timedistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"
+                android:text="0.3km | 3小时前"
+                android:textColor="@color/u3b_grey"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/u3b_whitegrey" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/page2_list_item_morecomments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="查看更多评论  0条"
+                android:textColor="@color/u3b_grey"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/u3b_whitegrey" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/page2_list_item_likebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_like_default"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/dodger_blue" />
+
+            <Button
+                android:id="@+id/page2_list_item_commentbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/u3b_btn_comment"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/dodger_blue" />
+
+            <Button
+                android:id="@+id/page2_list_item_joinbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/u3b_btn_join"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/dodger_blue" />
+
+            <Button
+                android:id="@+id/page2_list_item_morebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/u3b_btn_revine" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

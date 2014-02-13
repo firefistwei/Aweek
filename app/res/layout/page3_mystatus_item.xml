@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/u3b_card"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/u3b_card_blue"
+                android:clickable="true"
+                android:focusable="false"
+                android:padding="4dp" >
+
+                <SurfaceView
+                    android:id="@+id/page3_mystatus_item_surfaceview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/page3_mystatus_item_photoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/page3_mystatus_item_progressbar"
+                    style="@android:style/Widget.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="false"
+                    android:indeterminateDrawable="@drawable/u3b_video_refresh" />
+
+                <ImageView
+                    android:id="@+id/page3_mystatus_item_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_video_play_blank"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/u3b_btn_settings_blue"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/page3_mystatus_item_comment_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_u3b_comment" />
+
+                    <TextView
+                        android:id="@+id/page3_mystatus_item_comment_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="25 words"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/u3b_btn_settings_blue"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/page3_mystatus_item_like_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_u3b_like" />
+
+                    <TextView
+                        android:id="@+id/page3_mystatus_item_like_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="25 likes"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/u3b_btn_settings_red"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="有效时间还剩"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/page3_mystatus_item_delete_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="48:00 h"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/page3_mystatus_item_delete_icon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="3"
+                android:background="@drawable/u3b_btn_settings_red"
+                android:padding="4dp"
+                android:src="@drawable/u3b_cancel_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

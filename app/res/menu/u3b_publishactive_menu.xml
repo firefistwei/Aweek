@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/u3b_publishactive_set"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/ic_options"
+        android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/u3b_publishactive_type"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/u3b_discover_star"
+                android:title="活动类型"/>
+            <item
+                android:id="@+id/u3b_publishactive_authority"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/u3b_discover_top"
+                android:title="活动权限"/>
+            <item
+                android:id="@+id/u3b_publishactive_currenttime"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/u3b_discover_hot"
+                android:title="有效期"/>
+            
+        </menu>
+    </item>
+</menu>

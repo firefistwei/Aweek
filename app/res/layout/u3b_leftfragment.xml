@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left"
+    android:layout_width="260dp"
+    android:layout_height="fill_parent"
+    android:background="#1e90ff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/u3b_leftfragment_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/u3b_left_app_normal" />
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignRight="@+id/u3b_leftfragment_app"
+        android:layout_below="@+id/u3b_leftfragment_app"
+        android:background="@drawable/u3b_left_white_buble" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_white_settings"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/u3b_leftfragment_app"
+        android:layout_alignRight="@+id/u3b_leftfragment_app"
+        android:background="@drawable/u3b_left_white_buble" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_white_msg"
+            android:text="消息"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/u3b_leftfragment_app"
+        android:background="@drawable/u3b_left_white_buble" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_white_friends"
+            android:text="好友"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

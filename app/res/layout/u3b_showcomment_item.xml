@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+
+        <ImageView
+            android:id="@+id/u3b_showcomment_item_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/u3b_default_head"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/u3b_showcomment_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/u3b_showcomment_item_avatar"
+            android:text="Ta的名字"
+            android:textColor="@color/dodger_blue"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/u3b_showcomment_item__msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/u3b_showcomment_item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/u3b_showcomment_item_avatar"
+            android:text="消息的内容"
+            android:textColor="@color/u3b_grey"
+            android:textSize="16sp" />
+
+       
+
+        <TextView
+            android:id="@+id/u3b_showcomment_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/u3b_showcomment_item_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="几小时前"
+            android:textColor="@color/u3b_grey"
+            android:textSize="14sp" />
+    </RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <firefist.wei.main.widget.RefreshListView
+        android:id="@+id/page1_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:cacheColorHint="#0000"
+        android:divider="#0000"
+        android:dividerHeight="5dp"
+        android:listSelector="#0000"
+        android:scrollbars="none" />
+
+</LinearLayout>

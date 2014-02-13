@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/u3b_video3_layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:id="@+id/u3b_video3_record_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="0&apos;&apos;"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/u3b_video3_record_maxtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="10″"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+                <ProgressBar
+                    android:id="@+id/u3b_video3_record_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="10"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/globle_player_progress_bar_bg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/u3b_card"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/u3b_video3_camera_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <SurfaceView
+                        android:id="@+id/u3b_video3_surfaceview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:keepScreenOn="true"
+                        android:visibility="gone" >
+                    </SurfaceView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <VideoView
+                            android:id="@+id/u3b_video3_videoview"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:visibility="visible" >
+                        </VideoView>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/u3b_video3_photoview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/u3b_video3_layout_btns"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/u3b_video3_camera_layout"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/u3b_video3_redbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/u3b_btn_settings_red"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/ic_undo" />
+
+                    <ImageView
+                        android:id="@+id/u3b_video3_bluebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/u3b_btn_settings_blue"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_submit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/u3b_video3_layout_texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u3b_video3_layout_btns"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/u3b_video3_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="15"
+                        android:hint="添加描述"
+                        android:singleLine="true"
+                        android:textColor="@color/u3b_blue"
+                        android:textColorHint="@color/u3b_blue"
+                        android:textSize="18sp"
+                        android:typeface="monospace" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/u3b_video3_playbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="120dp"
+                    android:src="@drawable/ic_video_play"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/u3b_video3_mergebtn_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#2222"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_menu_done_big" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/u3b_video3_startbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/u3b_amsc_cam_bg"
+                    android:clickable="true"
+                    android:src="@drawable/amsc_cam_button"
+                    android:visibility="visible" />
+                
+                <ImageView
+                    android:id="@+id/u3b_video3_switchbtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/u3b_cam_switch"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
