@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <SurfaceView
+            android:id="@+id/u3b_video3_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="visible" >
+        </SurfaceView>
+
+        <VideoView
+            android:id="@+id/u3b_video3_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </VideoView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/u3b_video3_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/u3b_btn_red"
+        android:text="完成"
+        android:visibility="visible" />
+
+</LinearLayout>

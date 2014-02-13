@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_voice_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_style_grey"
+    android:clickable="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/comment_voice_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="4dp"
+            android:src="@drawable/random_head0" />
+
+        <TextView
+            android:id="@+id/comment_voice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="韦泽鹏"
+            android:textColor="#3f3f3f"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/comment_voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3天前"
+            android:textColor="#ffbbbbbb"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/comment_voice_display_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/globle_player_bg"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/comment_voice_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/globle_player_btn_play" />
+
+            <ProgressBar
+                android:id="@+id/comment_voice_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="6dip"
+                android:layout_margin="8dip"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/globle_player_progress_bar_bg" />
+
+            <TextView
+                android:id="@+id/comment_voice_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7″"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

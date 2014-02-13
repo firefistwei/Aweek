@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left"
+    android:layout_width="220dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sherlock_bg"
+    android:orientation="vertical" >
+
+<!--     <RelativeLayout
+        android:id="@+id/left_top_layout"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#232323" >
+
+        <ImageView
+            android:id="@+id/left_avatar"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/random_head0" />
+
+        <TextView
+            android:id="@+id/left_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/left_avatar"
+            android:layout_margin="3dip"
+            android:layout_toRightOf="@id/left_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=" 暂无"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/left_sig"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/left_name"
+            android:layout_alignRight="@id/left_name"
+            android:layout_below="@id/left_name"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="赶快取个好玩的名字吧~"
+            android:textColor="#7fffffff"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/left_avatar"
+            android:background="@drawable/sidebar_dividing_line" />
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/sherlock_bg"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/left_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@null"
+            android:divider="@drawable/biz_main_tab_divider"
+            android:dividerHeight="1px"
+            android:listSelector="@drawable/left_tab_bg_pressed" />
+    </LinearLayout>
+
+</LinearLayout>

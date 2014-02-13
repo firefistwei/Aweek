@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/page1_layout_image1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:onClick="page1_image1"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/photo_image1"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/job_1" />
+
+        <TextView
+            android:id="@+id/photo_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/photo_image1"
+            android:text="我讲笑话你请客"
+            android:textColor="#232323"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/photo_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photo_title1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/photo_image1"
+            android:drawableLeft="@drawable/little_new"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="时间"
+            android:textColor="#cc800080"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/photo_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photo_text1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/photo_image1"
+            android:drawableLeft="@drawable/little_uploader"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="地点"
+            android:textColor="#cc800080"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/photo_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photo_text2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/photo_image1"
+            android:drawableLeft="@drawable/little_time"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="介绍"
+            android:textColor="#cc800080"
+            android:textSize="14dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photo_text3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/photo_image1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:drawableLeft="@drawable/little_zan"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="000"
+                android:textColor="#3f3f3f"
+                android:textSize="14dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/little_collect"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="00"
+                android:textColor="#3f3f3f"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/card_bg"
+        android:duplicateParentState="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2.0dip"
+                android:src="@drawable/little_msg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:background="@null"
+                android:text="330人参加"
+                android:textColor="#3f3f3f"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2.0dip"
+                android:src="@drawable/little_like" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:background="@null"
+                android:text="190留言"
+                android:textColor="#3f3f3f"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

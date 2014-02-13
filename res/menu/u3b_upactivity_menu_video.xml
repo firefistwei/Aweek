@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_video_to_audio"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/btn_voice"
+        android:title="录语音"
+        android:orderInCategory="0"
+        />
+
+
+    <item
+        android:id="@+id/u3b_upactivity_menu_set"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/ic_options"
+        android:title="设置"
+        android:orderInCategory="1">
+        <menu>
+            <!-- <item
+                android:id="@+id/u3b_upactivity_menu_type"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/u3b_discover_star"
+                android:title="状态类型"/>
+            <item
+                android:id="@+id/u3b_upactivity_menu_authority"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/u3b_discover_top"
+                android:title="状态权限"/> -->
+            <item
+                android:id="@+id/u3b_upactivity_menu_currenttime"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/u3b_discover_hot"
+                android:title="有效时间"/>
+            
+        </menu>
+    </item>
+</menu>

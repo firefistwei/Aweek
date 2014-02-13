@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/u3b_change_userinfo_layout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/u3b_card_dialog" >
+
+    <TextView
+        android:id="@+id/u3b_change_userinfo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/dodger_blue"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="修改资料" />
+
+
+        <EditText
+            android:id="@+id/u3b_change_userinfo_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:hint="输入信息"
+            android:textColor="@color/u3b_grey">
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/u3b_change_userinfo_done"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/u3b_btn_blue"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+ 
+
+</LinearLayout>
